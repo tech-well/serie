@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
 
 body {
     background-color: rgb(19, 13, 13);
-}
+   }
 
 
 
@@ -25,6 +24,9 @@ body {
     background-image: linear-gradient(to right, gold, gold, rgba(255, 255, 255, 0), rgba(0, 128, 0, 0), gold, gold);
 }
 
+
+
+
 .container {
     display: flex;
     width: 100%;
@@ -32,8 +34,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-
-    justify-content: space-evenly;
+   justify-content: space-evenly;
 }
 
 .container h1,
@@ -45,16 +46,16 @@ p {
 }
 
 .container__video {
-    width: 400px;
-    height: 700px;
-    border: solid 2px rgb(19, 13, 13);
-    ;
-
+   
+    width: 38rem;
+    height: 19rem;
     flex: 2;
-    background-image: url(/imagem/successio_1.jpg);
-    background-size: 100% 100%;
-    border: solid 2px;
+    background-image: url(/imagem/succession_5.jpg);
+    background-size: 38rem 19rem;
     background-repeat: no-repeat;
+    background-position: center;
+    
+   
 }
 
 .container__descricao {
@@ -68,6 +69,8 @@ p {
     flex: 1;
 
 }
+
+
 
 .rodape {
     width: 100%;
@@ -86,6 +89,9 @@ iframe:hover {
 }
 
 @media screen and (max-width:500px) {
+      
+
+
     body {
         width: 31rem;
         display: flex;
@@ -94,8 +100,8 @@ iframe:hover {
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        margin: 0;
-      
+       
+
 
 
     }
@@ -105,7 +111,7 @@ iframe:hover {
         width: 25rem;
     }
 
-    .linha{
+    .linha {
         width: 100%;
     }
 
@@ -125,85 +131,109 @@ iframe:hover {
 
     }
 
+    .img{
+        width: 25rem;
+        height: 30rem;
+        background-image: url(/imagem/succession_2.jpg);
+        background-size: 25rem ;
+        background-repeat: no-repeat;
+    }
+
     .container__video {
 
         height: 200px;
+        display: none;
     }
 
-    .trailer{
+    .trailer {
         width: 29rem;
         height: 25rem;
-       
+
     }
 
-    :hover .trailer{
+    :hover .trailer {
         opacity: 0.5;
     }
 
-   .rodape{
-    width: 25rem;
-    justify-content: center;
-    align-items: center;
-    height: 25rem;
-   
-    
-    
-  
-   }
+    .rodape {
+        width: 25rem;
+        justify-content: center;
+        align-items: center;
+        height: 25rem;
 
-    .kenon{
-        display: none;
+
+
+
     }
-    .shiba{
+
+    .kenon {
         display: none;
     }
 
-    
-    
+    .shiba {
+        display: none;
+    }
+
+
+
 }
 
-@media screen and (max-width:1000px) and (min-width:500px){
-  body{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 62.5rem;
-    border: solid 1px red;
-  }
+@media screen and (max-width:1000px) and (min-width:500px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 62.5rem;
 
-  .cabecalho{
-    width: 62.5rem;
-    border: solid 1px red;
-  }
+    }
 
-   .container__descricao{
-    width: 62.5rem;
+    .cabecalho {
+        width: 62.5rem;
+
+    }
+
+    .container__descricao {
+        width: 62.5rem;
+
+    }
+
+    .img{
+        width: 62rem;
+        height: 30rem;
+        display: flex;
+        align-content: center;
+        border: solid 0;
+        background-image: url(/imagem/succession_6.jpg);
+        background-position: center;
+        background-size: 36rem 21rem;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 62.5rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        height: 1000px;
+    }
+
+    .container__video {
+        width: 40rem;
+        display: flex;
+        align-content: center;
+        border: solid 0;
+        background-image: url(/imagem/succession_3.jpg);
+        background-position: center;
+        background-size: 36rem 21rem;
+       
+
+    }
+
+}
+
+@media screen and (max-width:1300px) and (min-width:1001px){
+   .container__descricao h1,p{
+    font-size: 0.9rem;
    }
 
-  .container{
-    width: 62.5rem;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: solid 1px red;
-    height: 1000px;
-  }
-
-  .container__video{
-    background-image: url(/imagem/succession_3.jpg);
-    background-size: 32rem 21rem;
-    border: solid 1px red;
-    
-  }
-
-  p{
-    border: solid 1px red;
-    width: 60.5rem;
-   
-  }
-
-  .rodape{
-    border: solid 1px red;
-  }
-
-}
-
+} 
