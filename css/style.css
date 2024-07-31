@@ -47,25 +47,26 @@ p {
 .container__video {
     width: 400px;
     height: 700px;
-    border: solid 2px  rgb(19, 13, 13);;
-     
+    border: solid 2px rgb(19, 13, 13);
+    ;
+
     flex: 2;
     background-image: url(/imagem/successio_1.jpg);
     background-size: 100% 100%;
-     border: solid 2px;
+    border: solid 2px;
     background-repeat: no-repeat;
 }
 
 .container__descricao {
     width: 400px;
     height: 700px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 15px 0 15px;
     flex: 1;
-   
+
 }
 
 .rodape {
@@ -75,18 +76,134 @@ p {
     justify-content: space-evenly;
 }
 
-.rodape iframe{
+.rodape iframe {
     opacity: 0.2;
 }
 
-iframe:hover{
+iframe:hover {
     opacity: 0.7;
+
+}
+
+@media screen and (max-width:500px) {
+    body {
+        width: 31rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 0;
+      
+
+
+    }
+
+    .cabecalho {
+
+        width: 25rem;
+    }
+
+    .linha{
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+
+        margin: 0 auto;
+        width: 25rem;
+        flex-wrap: wrap;
+        height: 62.5rem;
+
+
+    }
+
+    .container__descricao {
+        text-align: center;
+
+    }
+
+    .container__video {
+
+        height: 200px;
+    }
+
+    .trailer{
+        width: 29rem;
+        height: 25rem;
+       
+    }
+
+    :hover .trailer{
+        opacity: 0.5;
+    }
+
+   .rodape{
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+   
+    
+    
+  
+   }
+
+    .kenon{
+        display: none;
+    }
+    .shiba{
+        display: none;
+    }
+
+    
     
 }
 
-@media screen and (max-width:400px) {
-    body{
-        background-color: blue;
-    }
+@media screen and (max-width:1000px) and (min-width:500px){
+  body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 62.5rem;
+    border: solid 1px red;
+  }
+
+  .cabecalho{
+    width: 62.5rem;
+    border: solid 1px red;
+  }
+
+   .container__descricao{
+    width: 62.5rem;
+   }
+
+  .container{
+    width: 62.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid 1px red;
+    height: 1000px;
+  }
+
+  .container__video{
+    background-image: url(/imagem/succession_3.jpg);
+    background-size: 32rem 21rem;
+    border: solid 1px red;
     
+  }
+
+  p{
+    border: solid 1px red;
+    width: 60.5rem;
+   
+  }
+
+  .rodape{
+    border: solid 1px red;
+  }
+
 }
+
