@@ -187,6 +187,7 @@ iframe:hover {
 
     }
 
+
     .cabecalho {
         width: 62.5rem;
 
@@ -194,7 +195,16 @@ iframe:hover {
 
     .container__descricao {
         width: 62.5rem;
+        display: flex;
+        align-items: center;
+}
+   .container__descricao h1{
+    font-size: 1.4rem;
+   }
 
+    .container__descricao p{
+        font-size: 1.1rem;
+        width: 50rem;
     }
 
     .img{
